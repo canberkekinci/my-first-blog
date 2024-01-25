@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(241, 241, 241);
+    z-index: 100;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    width: auto;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 101;
+}
+
+article {
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+    transition: .3s;
+    background-color: white;
+    overflow: hidden;
+}
+
+article:hover {
+    box-shadow: 0 0 5px .5px #000;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pop-up {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(4px);
+    display: none;
+}
+
+.pop-up-card {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 70vh;
+    background-color: #fafafa;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.gobackbutton {
+    position: fixed;
+    top: 2px;
+    right: 2px;
+    border: none;
+    color: red;
+    background-color: #fafafa;
+    border-radius: 15px;
+}
+
+.leftpart {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    padding-left: 15%;
+}
+
+.rightpart {
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    padding-right: 15%;
+}
+
+.upperpart {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 8%;
+}
+
+.bottompart {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 8%;
+}
