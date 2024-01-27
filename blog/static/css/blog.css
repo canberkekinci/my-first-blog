@@ -1,5 +1,9 @@
+* {
+    color: rgb(241, 241, 241);
+}
+
 body {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(41, 40, 40);
     z-index: 100;
 }
 
@@ -33,7 +37,7 @@ article {
     border: 1px solid black;
     margin-bottom: 25px;
     transition: .3s;
-    background-color: white;
+    background-color: #474646;
     overflow: hidden;
 }
 
@@ -66,11 +70,12 @@ a {
     transform: translate(-50%, -50%);
     width: 70vw;
     height: 70vh;
-    background-color: #fafafa;
+    background-color: #474646;
     border: none;
     border-radius: 15px;
     padding: 2rem;
     overflow-y: scroll;
+    scrollbar-color: #474646 #7a7a7a;
 }
 
 .gobackbutton {
@@ -79,7 +84,7 @@ a {
     right: 10px;
     border: none;
     color: red;
-    background-color: #fafafa;
+    background-color: #474646;
     border-radius: 15px;
 }
 
