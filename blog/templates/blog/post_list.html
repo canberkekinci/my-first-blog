@@ -12,13 +12,14 @@
 <body>
     <div class="container">
         <header>
-            <h1><a href="/">Django Girls Blog</a></h1>
+            <h1>Django Girls Blog</h1>
         </header>
         <div class="cards" id = "cards">
             {% for post in posts %}
                 <article id="{{post.title}}" onclick="popup('{{post.title}}')">
                     <h2><a href="">{{post.title}}</a></h2>
-                    <p>{{post.text|linebreaksbr}}</p>
+                    <div class="content-div"><p>{{post.text|linebreaksbr}}</p>
+                    </div>
                     <time>published: {{post.published_date}}</time>
                 </article>
             {% endfor %}
